@@ -5,7 +5,7 @@ const crypto = require("crypto");
 router.get("/check",async(req,res)=>{
     try{
         console.log("yas")
-    }catch(){
+    }catch(error){
         console.log(error)
     }
     

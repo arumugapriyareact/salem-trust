@@ -2,6 +2,14 @@ const router = require("express").Router();
 const Razorpay = require("razorpay");
 const crypto = require("crypto");
 
+router.get("/check",async(req,res)=>{
+    try{
+        console.log("yas")
+    }catch(){
+        console.log(error)
+    }
+    
+})
 router.post("/orders",async(req,res)=>{
     try{
         const instance= new Razorpay({
@@ -28,7 +36,14 @@ router.post("/orders",async(req,res)=>{
         res.status(500).json({message: "Internal Server Error"})
     }
 })
-
+router.get("/verify_get",async(req,res)=>{
+    try{
+        console.log("")
+    }catch(error){
+        console.log(error)
+        res.status(500).json({message: "Internal Server Error!"})
+    }
+})
 router.post("/verify",async(req,res)=>{
     try{
 

@@ -1,7 +1,2 @@
 [build]
-  command = "npm run build"
-  functions = "lambda"
-
-[build.environment]
-  NODE_VERSION = "14"
-  YOUR_CUSTOM_ENV_VAR = "value"
+functions = "functions"

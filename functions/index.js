@@ -11,7 +11,7 @@ dotenv.config();
 app.use(express.json());
 app.use(cors());
 
-app.use("/.netlify/functions/api/payment",paymentRoutes)
+app.use("/netlify/functions/api/payment",paymentRoutes)
 
 const port = process.env.PORT || 8000;
 app.listen(port,()=>{console.log(`Listening to port ${port}`)});

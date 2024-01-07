@@ -2,7 +2,7 @@ const express = require("express");
 const serverless = require("serverless-http")
 const cors = require("cors");
 const dotenv = require("dotenv");
-const paymentRoutes = require("../routes/payment");
+const paymentRoutes = require("./payment");
 
 const app = express();
 
